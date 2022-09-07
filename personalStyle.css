@@ -1,0 +1,152 @@
+/* hide content of additional three sections */
+#portfolio { 
+  display: none;
+}
+#qualifications {
+  display: none;
+}
+#service {
+  display: none;
+}
+
+body {
+    background-color: rgb(234, 95, 150);
+}
+
+/* text style choices */
+h1 {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* button style choices */
+.button1 {
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0px 1000px;
+  cursor: pointer;
+  background-color: rgb(236, 114, 77);
+  border: none;
+  position: absolute;
+  left: 450px;
+  top: 90px;
+}
+
+/* navigation bar */
+nav {
+  list-style-type: none;
+  margin: 50px 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgb(236, 114, 77);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+  
+li {
+  float: left;
+}
+  
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 0px 125px;
+  text-decoration: none;
+}
+  
+li a:hover {
+    background-color: rgb(255, 0, 102);
+}
+
+/* picture slideshow */
+.personalPicSlideshow {
+  max-width: 400px;
+  position: relative;
+  margin: auto;
+}
+
+/* hide pictures to start */
+.myPics {
+  display: none;
+} 
+
+/* slideshow buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -20px;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* style pictures in content */
+.serviceImages {
+    margin: 150px auto;
+    width: 50%;
+    padding: 8px;
+}
+
+#sI {
+    float: left;
+    width: 50%;
+    padding: 0 10px 0 0;
+}
+
+.serviceImage1Text {
+    text-align: justify;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolioImages {
+  margin: 150px auto;
+  width: 40%;
+  padding: 8px;
+}
+
+#pI {
+  float: left;
+  width: 50%;
+  padding: 0 10px 0 0;
+}
+
+.portfolioImage1Text {
+  text-align: justify;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
