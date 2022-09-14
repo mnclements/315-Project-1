@@ -4,36 +4,41 @@
 <head>
     <meta charset="UTF-8"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="personalStyle.css">
+    <link rel="stylesheet" type="text/css" href="personalStyle.css" id="page_style"/>
     <title>NICOLE CLEMENTS</title>
-    <script src="personalWebsiteProg.js">
-      show('personalWebsite');
-    </script>
 </head>
 
 <!-- Title -->
 <header>
   <h1> N I C O L E</h1>
-  <h1>CLEMENTS</h1>
+  <h1>C L E M E N T S</h1>
 </header>
 
 <!-- Navigation Bar -->
 <nav>
-  <li><a href="#personalWebsite" onclick = "return show('personalWebsite')">Home</a></li>
-  <li><a href="#portfolio" onclick = "return show('portfolio')">Technical Portfolio</a></li>
-  <li><a href="#qualifications" onclick = "return show('qualifications')">Qualifications</a></li>
-  <li><a href="#service" onclick = "return show('service')">Service</a></li>
-  <button class="button1" onclick="window.location.href='https://www.linkedin.com/in/tamu-nicole-clements';">LinkedIn</button>
+
+  <li><a href="index.html">Home</a></li>
+  <li><a href="portfolio.html">Technical Portfolio</a></li>
+  <li><a href="qualifications.html">Qualifications</a></li>
+  <li><a href="service.html">Service</a></li>
+  
 </nav>
 
 
 <body>
 
+<button class="button1" onclick="window.location.href='https://www.linkedin.com/in/tamu-nicole-clements';">LinkedIn</button> 
+<script src='personalWebsiteProg.js'></script>
+<button type='button' id = 'b2' onclick='showStyle1()'>Display 1</button>
+<button type='button' id = 'b3' onclick='showStyle2()'>Display 2</button>
+
 <!-- Landing Page -->
 <div id = "personalWebsite">
 
-  <!-- About Me -->
-  <h2> About Me </h2>
+  <div id = "aboutMe">
+    <!-- About Me -->
+    <h2> About Me </h2>
+  </div>
 
   <!-- Pictures container -->
   <div class="personalPicSlideshow">
@@ -63,114 +68,52 @@
       <a class="next" onclick = "nextPic(1)"> &#10095; </a>
 
     </div>
+      <div class="personalPics2">
+      <div id = "landingPic1">
+        <img src="image1.jpg" style="width:100%">
+      </div>
+      <div id = "landingPic2">
+        <img src="image2.jpg" style="width:100%">
+      </div>
+      <div id = "landingPic3">
+        <img src="image3.jpg" style="width:100%">
+      </div>
+      <div id = "landingPic4">
+        <img src="image4.jpg" style="width:100%">
+      </div>
+      <div id = "landingPic5">
+        <img src="image5.jpg" style="width:100%">
+      </div>
+    </div>
 
     <br>
 
       <!-- About Me Text (below pictures) -->
-      <p> 
-          Howdy! My name is Nicole Clements and I am a junior computing major at Texas A&M University in College Station, TX. 
-          I grew up in Plano, TX and went to high school at the <a href="https://www.ursulinedallas.org/about/why-ursuline">Ursuline Academy of Dallas</a>. More details about my education, 
-          work experience, and on-campus activities can be found under the "Qualifications" tab. In high school, I developed 
-          a strong interest in the computer science industry after taking a few different programming classes offered by my 
-          school. This led me to apply to the College of Engineering at Texas A&M University to prepare me with the knowledge 
-          necessary to succeed in a career in the computer science field. Samples of some of the work that I have done over 
-          the past few years can be found under the “Technical Portfolio” tab. Outside of class, I have also gotten the 
-          opportunity to join a few different on-campus organizations at Texas A&M and spend time giving back to the local 
-          community in Bryan-College Station. More details about my experiencing with giving back to my community can be found 
-          under the “Service” tab. 
-      </p>
-      <p>
-          Outside of class and my on-campus involvements, I spend my free time listening to music, going to sporting events, 
-          spending time with my friends or family, and traveling. I have an especially strong passion for travel and have 
-          been to eight different countries so far. My favorite destination so far is Australia. I was very fortunate to 
-          travel to Australia on an educational and cultural delegation in high school. We visited our sister-school in 
-          Toowoomba and I was able to stay with one of the students there for two weeks. I learned so much on this trip 
-          and still keep in touch with my host-sister to this day. I am so grateful for the <a href="https://vimeo.com/user82269549">travel experiences</a> 
-          that I have had so far and am very excited to continue exploring the world in the future. 
-          I would love to combine to my passion for travel and computing knowledge in order to pursue a career in the travel industry one day.  
-      </p>
-
-</div>
-
-<!-- Technical Portfolio -->
-<div id = "portfolio">
-
-  <h2> Technical Portfolio </h2>
-
-  <div class ="portfolioImages">
-
-      <img id="pI" src="tamu.png">
-
-      <div class = "portfolioImage1Text">
-          <p>While studying at Texas A&M, I have completed a variety of different technical projects
-          for my classes. For a project in a programming languages course, I simulated a <a href="Java.zip" download>market</a>, which 
-          had buying and selling capabilities, and a <a href="Java.zip" download>messaging system</a> in Java.
-          For a project in a data structures and algorithms course, I used C++ to create a <a href="C++.zip" download>binary search tree</a>, 
-          output the tree as text, and calculate the average search cost of every node in the tree.</p> <p>In the future, 
-          I would like to use my experience and technical skills to explore mobile app development. I would really like 
-          to create a mobile app for a non-profit that I work with.</p>
+      <div id = "aboutMeText">
+        <p> 
+            Howdy! My name is Nicole Clements and I am a junior computing major at Texas A&M University in College Station, TX. 
+            I grew up in Plano, TX and went to high school at the <a href="https://www.ursulinedallas.org/about/why-ursuline">Ursuline Academy of Dallas</a>. More details about my education, 
+            work experience, and on-campus activities can be found under the "Qualifications" tab. I developed 
+            a strong interest in the computer science industry after taking a few different programming classes offered by my 
+            high school. This led me to apply to the <a href="https://engineering.tamu.edu/about/index.html">College of Engineering</a> at Texas A&M University in hopes of developing the knowledge 
+            necessary to succeed in a career in a computer science field. Samples of some of the work that I have done in my classes at A&M over 
+            the past few years can be found under the “Technical Portfolio” tab. Outside of class, I have also gotten the 
+            opportunity to join a few different on-campus organizations and spend time giving back to the local 
+            community in Bryan-College Station. More details about my experiences with giving back to my community can be found 
+            under the “Service” tab. 
+        </p>
+        <p>
+            Outside of class and my on-campus involvements, I spend my free time listening to music, going to sporting events, 
+            spending time with my friends or family, and traveling. I have an especially strong passion for travel and have 
+            been to eight different countries so far. Out of all the places that I have been, my favorite destination has been Australia.
+            I was very fortunate to travel to Toowoomba, Australia on an educational and cultural delegation in high school. We visited our sister-school 
+            there and I was able to stay in the home of one of their students for two weeks. I learned so much on this trip 
+            and still keep in touch with my host-sister to this day. Through traveling, I have developed a global perspective and become comfortable with 
+            taking risks. I am so grateful for the <a href="https://vimeo.com/user82269549">travel experiences</a> 
+            that I have had thus far and am very excited to continue exploring the world in the future. 
+            I hope to combine my computing knowledge and passion for travel by pursuing a career in the travel industry one day.  
+        </p>
       </div>
-
-  </div>
- 
-</div>
-
-<!-- Qualifications Section -->
-<div id = "qualifications">
-  <h2> Qualifications </h2>
-
-  <p> 
-      <a href="Nicole-Clements-Resume.pdf" download>Here</a> you can view my resume, which includes information about my education, work experience, 
-      activities and skills. Through my rigorous computer science coursework, I have developed
-      a deep understanding of data structures, algorithms, and data analysis. I have also gained experience
-      working with several different programming languages, such as C++, Java, and Python. 
-      In the future, I would be interested in using these skills to explore application development.
-      I believe that this would be a great way for me to apply my strong passion for problem-solving
-      and making people's lives easier.
-  </p>
-  <p>
-      My most recent work experience was as a wealth management intern at 
-      <a href="https://www.morganstanley.com/about-us">Morgan Stanley</a>.
-      This internship allowed me to gain useful business knowledge to supplement the computing 
-      knowledge that I am developing in my classes. Another position that was very beneficial to my development 
-      was working as a sales associate at <a href="https://www.shoplizardthicket.com/community-involvement">Lizard Thicket</a>. 
-      This position gave me the opportunity to build 
-      excellent communication skills. This job also allowed me to give back to my community, as one day every 
-      month our store would donate 10% of our sales to a local charity. As far as my involvement in college, my involvement 
-      in my sorority has had the most impact on me. Being a member of the <a href="https://tamu.kappa.org/">Epsilon Rho chapter of Kappa Kappa 
-      Gamma</a> has allowed me to develop life-long friendships and important leadership skills.
-  </p>
-</div>
-
-<!-- Service Section -->
-<div id = "service">
-
-  <h2> Service </h2>
-
-  <div class ="serviceImages">
-      <img id="sI" src="serviceImage1.jpg">
-      <div class = "serviceImage1Text">
-          As a member of the philanthropy committee for the Epsilon Rho chapter of Kappa Kappa Gamma, 
-          I help work to raise a total of around $50,000 every school year. This money benefits both our national philanthropy, 
-          The National Alliance on Mental Illness, and our local philanthropy, Books and a Blanket. Each semester, we 
-          host an philanthropy event at our house with a raffle, food, and entertainment. If you would like to attend 
-          this semester's event or donate to our philanthropies, please visit our <a href="https://kkg.crowdchange.co/26923">Crowd Change page</a>.
-          To learn more about our philanthropies, visit <a href="https://nami.org/About-NAMI">NAMI.org</a> and the <a href="http://booksandablanket.squarespace.com/what-we-do">Books and a Blanket</a> website.
-      </div>
-  </div>
-
-  <div class ="serviceImages">
-      <img id="sI" src="serviceImage2.jpg">
-      <div class = "serviceImage1Text">
-          This fall I am excited to be joining the digital team at <a href="https://letthemlive.org/">Let Them Live</a> as an unpaid intern.
-          Let Them Live is a non-profit that supports pregnant women facing financial struggles. A 
-          few of the ways that the organization helps mothers includes paying 
-          for their rent or car payments, providing counseling, and helping them find employment. 
-          They make this possible by hosting fundraisers for specific moms and accepting monthly 
-          donations from generous donors. I will be helping the organization this semester with 
-          optimizing their technology platforms.
-      </div>
-  </div>
 
 </div>
 

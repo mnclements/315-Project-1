@@ -1,32 +1,63 @@
-/* allow for switching content */
-function show(toShow) {
-  document.getElementById('personalWebsite').style.display = 'none';
-  document.getElementById('portfolio').style.display ='none';
-  document.getElementById('service').style.display = 'none';
-  document.getElementById('qualifications').style.display='none';
-  document.getElementById(toShow).style.display='block';
-  return false;
+/* load new website display */
+function loadNewStyle()
+{
+	page_style = localStorage.getItem("page_stylesheet_name", "personalStyle.css");
+
+	if (page_style === null)
+	{
+		page_style = "personalStyle.css";
+	}
+
+	document.getElementById('page_style').setAttribute("href", page_style);
 }
 
-/* picture slideshow on landing page */
-let picIndex = 1;
-displayPics(picIndex);
+/* display the first website display/formatting */
+function showStyle1()
+{
+    localStorage.setItem("page_stylesheet_name", "personalStyle.css");
+	  loadNewStyle();
+}
 
+/* display the second website display/formatting */
+function showStyle2()
+{
+    localStorage.setItem("page_stylesheet_name", "style2.css");
+	  loadNewStyle();
+}
+
+/* load default display to start */
+loadNewStyle();
+
+
+/* picture slideshow on landing page */
+
+/* display new image based on which arrow clicked */
+function displayPics(num) {
+
+  let landingPictures = document.getElementsByClassName("myPics");
+
+  /* handle out of bounds */
+  if (num < 1) {
+    picIndex = landingPictures.length;
+  }
+  if (num > landingPictures.length) {
+    picIndex = 1;
+  }
+
+  /* hide all pictures */
+  for (i = 0; i < landingPictures.length; i++) {
+    landingPictures[i].style.display = "none";
+  }
+
+  /* show picture at correct index */
+  landingPictures[picIndex-1].style.display = "block";
+}
+
+/* display new image when arrow clicked */
 function nextPic(num) {
   displayPics(picIndex = picIndex + num);
 }
 
-function displayPics(num) {
-  let pictures = document.getElementsByClassName("myPics");
-  let i = 0;
-  if (num < 1) {
-    picIndex = pictures.length;
-  }
-  if (num > pictures.length) {
-    picIndex = 1;
-  }
-  for (i = 0; i < pictures.length; i++) {
-    pictures[i].style.display = "none";
-  }
-  pictures[picIndex-1].style.display = "block";
-}
+/* start picture slideshow at beginning */
+let picIndex = 1;
+displayPics(picIndex);

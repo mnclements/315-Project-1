@@ -1,52 +1,26 @@
-/* hide content of additional three sections */
-#portfolio { 
-  display: none;
-}
-#qualifications {
-  display: none;
-}
-#service {
-  display: none;
-}
-
+/* website background color */
 body {
     background-color: rgb(234, 95, 150);
 }
 
-/* text style choices */
+/* text formatting */
 h1 {
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h2 {
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 p {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-/* button style choices */
-.button1 {
   color: white;
-  padding: 15px 30px;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  display: inline-block;
-  font-size: 14px;
-  margin: 0px 1000px;
-  cursor: pointer;
-  background-color: rgb(236, 114, 77);
-  border: none;
-  position: absolute;
-  left: 450px;
-  top: 90px;
 }
 
-/* navigation bar */
+/* navigation bar formatting */
 nav {
   list-style-type: none;
   margin: 50px 0px;
@@ -57,7 +31,6 @@ nav {
   text-align: center;
 }
 
-  
 li {
   float: left;
 }
@@ -75,11 +48,54 @@ li a:hover {
     background-color: rgb(255, 0, 102);
 }
 
+/* formatting for two toggle buttons */
+#b2 {
+  font-size: 12px;
+  padding: 5px 15px;
+  border: none;
+  color: white;
+  background-color: rgb(236, 114, 77);
+  position: absolute;
+  left: 1415px;
+  top: 25px;
+}
+#b3 {
+  font-size: 12px;
+  padding: 5px 15px;
+  border: none;
+  color: white;
+  background-color: rgb(236, 114, 77);
+  position: absolute;
+  left: 1505px;
+  top: 25px;
+}
+
+/* linkedIn button formatting */
+.button1 {
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0px 1000px;
+  cursor: pointer;
+  background-color: rgb(236, 114, 77);
+  border: none;
+  position: absolute;
+  left: 450px;
+  top: 90px;
+}
+
+/* LANDING PAGE FORMATTING */
+
 /* picture slideshow */
 .personalPicSlideshow {
   max-width: 400px;
   position: relative;
   margin: auto;
+}
+.personalPics2{
+  display: none;
 }
 
 /* hide pictures to start */
@@ -108,25 +124,9 @@ li a:hover {
   border-radius: 3px 0 0 3px;
 }
 
-/* style pictures in content */
-.serviceImages {
-    margin: 150px auto;
-    width: 50%;
-    padding: 8px;
-}
+/* TECHNICAL PORTFOLIO PAGE FORMATTING */
 
-#sI {
-    float: left;
-    width: 50%;
-    padding: 0 10px 0 0;
-}
-
-.serviceImage1Text {
-    text-align: justify;
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+/* style portfolio image with corresponding text */
 .portfolioImages {
   margin: 150px auto;
   width: 40%;
@@ -135,7 +135,7 @@ li a:hover {
 
 #pI {
   float: left;
-  width: 50%;
+  width: 70%;
   padding: 0 10px 0 0;
 }
 
@@ -145,6 +145,37 @@ li a:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* QUALIFICATIONS PAGE FORMATTING */
+
+/* style qualifications image with corresponding text */
+#rP {
+  text-align: center;
+  margin: auto;
+  display: block;
+  width: 30%;
+  padding: 8px;
+}
+
+/* SERVICE PAGE FORMATTING */
+
+/* style service images with corresponding text */
+.serviceImages {
+  margin: 150px auto;
+  width: 50%;
+  padding: 8px;
+}
+
+#sI1 {
+  float: left;
+  width: 50%;
+  padding: 0 10px 0 0;
+}
+#sI2 {
+float: left;
+width: 50%;
+padding: 0 10px 0 0;
+}
 
 
 
